@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002EFA861EEF41A800C9C8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002EFA851EEF41A800C9C8B8 /* AppDelegate.swift */; };
+		002EFA8A1EEF41A800C9C8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002EFA891EEF41A800C9C8B8 /* Assets.xcassets */; };
+		002EFAA11EEF41F100C9C8B8 /* FinderSyncExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 002EFA981EEF41F100C9C8B8 /* FinderSyncExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		002EFACA1EEF42B300C9C8B8 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002EFAC91EEF42B300C9C8B8 /* FinderSync.swift */; };
+		002EFACC1EEF42EB00C9C8B8 /* NewFileNameGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002EFACB1EEF42EB00C9C8B8 /* NewFileNameGeneratorTests.swift */; };
+		002EFAEF1EEF478600C9C8B8 /* NewFileNameGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 002EFAED1EEF478600C9C8B8 /* NewFileNameGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		002EFAF21EEF478600C9C8B8 /* NewFileNameGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */; };
+		002EFAF31EEF478600C9C8B8 /* NewFileNameGenerator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		002EFAFA1EEF491B00C9C8B8 /* NewFileNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002EFAF91EEF491B00C9C8B8 /* NewFileNameGenerator.swift */; };
+		002EFAFB1EEF4BFC00C9C8B8 /* NewFileNameGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		002EFA9F1EEF41F100C9C8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002EFA7A1EEF41A800C9C8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002EFA971EEF41F100C9C8B8;
+			remoteInfo = FinderSyncExtension;
+		};
+		002EFAB71EEF424400C9C8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002EFA7A1EEF41A800C9C8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002EFA811EEF41A800C9C8B8;
+			remoteInfo = NewFileFinderExtension;
+		};
+		002EFAF01EEF478600C9C8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002EFA7A1EEF41A800C9C8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002EFAEA1EEF478600C9C8B8;
+			remoteInfo = NewFileNameGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002EFAA51EEF41F100C9C8B8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				002EFAA11EEF41F100C9C8B8 /* FinderSyncExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAC51EEF424400C9C8B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002EFAF31EEF478600C9C8B8 /* NewFileNameGenerator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002EFA821EEF41A800C9C8B8 /* FinderNewFileExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderNewFileExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EFA851EEF41A800C9C8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		002EFA891EEF41A800C9C8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002EFA8E1EEF41A800C9C8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002EFA981EEF41F100C9C8B8 /* FinderSyncExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinderSyncExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EFA9B1EEF41F100C9C8B8 /* FinderSyncExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderSyncExtension.entitlements; sourceTree = "<group>"; };
+		002EFA9E1EEF41F100C9C8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002EFAB31EEF424400C9C8B8 /* NewFileNameGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewFileNameGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EFABC1EEF424400C9C8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002EFAC91EEF42B300C9C8B8 /* FinderSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		002EFACB1EEF42EB00C9C8B8 /* NewFileNameGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFileNameGeneratorTests.swift; sourceTree = "<group>"; };
+		002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewFileNameGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EFAED1EEF478600C9C8B8 /* NewFileNameGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFileNameGenerator.h; sourceTree = "<group>"; };
+		002EFAEE1EEF478600C9C8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002EFAF91EEF491B00C9C8B8 /* NewFileNameGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFileNameGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002EFA7F1EEF41A800C9C8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFAF21EEF478600C9C8B8 /* NewFileNameGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFA951EEF41F100C9C8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFAFB1EEF4BFC00C9C8B8 /* NewFileNameGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAB01EEF424400C9C8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAE71EEF478600C9C8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002EFA791EEF41A800C9C8B8 = {
+			isa = PBXGroup;
+			children = (
+				002EFA841EEF41A800C9C8B8 /* FinderNewFileExtension */,
+				002EFA991EEF41F100C9C8B8 /* FinderSyncExtension */,
+				002EFAEC1EEF478600C9C8B8 /* NewFileNameGenerator */,
+				002EFAB91EEF424400C9C8B8 /* NewFileNameGeneratorTests */,
+				002EFA831EEF41A800C9C8B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		002EFA831EEF41A800C9C8B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002EFA821EEF41A800C9C8B8 /* FinderNewFileExtension.app */,
+				002EFA981EEF41F100C9C8B8 /* FinderSyncExtension.appex */,
+				002EFAB31EEF424400C9C8B8 /* NewFileNameGeneratorTests.xctest */,
+				002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002EFA841EEF41A800C9C8B8 /* FinderNewFileExtension */ = {
+			isa = PBXGroup;
+			children = (
+				002EFA851EEF41A800C9C8B8 /* AppDelegate.swift */,
+				002EFA891EEF41A800C9C8B8 /* Assets.xcassets */,
+				002EFA8E1EEF41A800C9C8B8 /* Info.plist */,
+			);
+			path = FinderNewFileExtension;
+			sourceTree = "<group>";
+		};
+		002EFA991EEF41F100C9C8B8 /* FinderSyncExtension */ = {
+			isa = PBXGroup;
+			children = (
+				002EFAC91EEF42B300C9C8B8 /* FinderSync.swift */,
+				002EFA9E1EEF41F100C9C8B8 /* Info.plist */,
+				002EFA9A1EEF41F100C9C8B8 /* Supporting Files */,
+			);
+			path = FinderSyncExtension;
+			sourceTree = "<group>";
+		};
+		002EFA9A1EEF41F100C9C8B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				002EFA9B1EEF41F100C9C8B8 /* FinderSyncExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		002EFAB91EEF424400C9C8B8 /* NewFileNameGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				002EFACB1EEF42EB00C9C8B8 /* NewFileNameGeneratorTests.swift */,
+				002EFABC1EEF424400C9C8B8 /* Info.plist */,
+			);
+			path = NewFileNameGeneratorTests;
+			sourceTree = "<group>";
+		};
+		002EFAEC1EEF478600C9C8B8 /* NewFileNameGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				002EFAED1EEF478600C9C8B8 /* NewFileNameGenerator.h */,
+				002EFAEE1EEF478600C9C8B8 /* Info.plist */,
+				002EFAF91EEF491B00C9C8B8 /* NewFileNameGenerator.swift */,
+			);
+			path = NewFileNameGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		002EFAE81EEF478600C9C8B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFAEF1EEF478600C9C8B8 /* NewFileNameGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		002EFA811EEF41A800C9C8B8 /* FinderNewFileExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002EFA911EEF41A800C9C8B8 /* Build configuration list for PBXNativeTarget "FinderNewFileExtension" */;
+			buildPhases = (
+				002EFA7E1EEF41A800C9C8B8 /* Sources */,
+				002EFA7F1EEF41A800C9C8B8 /* Frameworks */,
+				002EFA801EEF41A800C9C8B8 /* Resources */,
+				002EFAA51EEF41F100C9C8B8 /* Embed App Extensions */,
+				002EFAC51EEF424400C9C8B8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002EFAA01EEF41F100C9C8B8 /* PBXTargetDependency */,
+				002EFAF11EEF478600C9C8B8 /* PBXTargetDependency */,
+			);
+			name = FinderNewFileExtension;
+			productName = NewFileFinderExtension;
+			productReference = 002EFA821EEF41A800C9C8B8 /* FinderNewFileExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		002EFA971EEF41F100C9C8B8 /* FinderSyncExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002EFAA21EEF41F100C9C8B8 /* Build configuration list for PBXNativeTarget "FinderSyncExtension" */;
+			buildPhases = (
+				002EFA941EEF41F100C9C8B8 /* Sources */,
+				002EFA951EEF41F100C9C8B8 /* Frameworks */,
+				002EFA961EEF41F100C9C8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinderSyncExtension;
+			productName = FinderSyncExtension;
+			productReference = 002EFA981EEF41F100C9C8B8 /* FinderSyncExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		002EFAB21EEF424400C9C8B8 /* NewFileNameGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002EFAC61EEF424400C9C8B8 /* Build configuration list for PBXNativeTarget "NewFileNameGeneratorTests" */;
+			buildPhases = (
+				002EFAAF1EEF424400C9C8B8 /* Sources */,
+				002EFAB01EEF424400C9C8B8 /* Frameworks */,
+				002EFAB11EEF424400C9C8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002EFAB81EEF424400C9C8B8 /* PBXTargetDependency */,
+			);
+			name = NewFileNameGeneratorTests;
+			productName = NewFileNameGeneratorTests;
+			productReference = 002EFAB31EEF424400C9C8B8 /* NewFileNameGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		002EFAEA1EEF478600C9C8B8 /* NewFileNameGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002EFAF41EEF478600C9C8B8 /* Build configuration list for PBXNativeTarget "NewFileNameGenerator" */;
+			buildPhases = (
+				002EFAE61EEF478600C9C8B8 /* Sources */,
+				002EFAE71EEF478600C9C8B8 /* Frameworks */,
+				002EFAE81EEF478600C9C8B8 /* Headers */,
+				002EFAE91EEF478600C9C8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewFileNameGenerator;
+			productName = NewFileNameGenerator;
+			productReference = 002EFAEB1EEF478600C9C8B8 /* NewFileNameGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002EFA7A1EEF41A800C9C8B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jeffrey Fulton";
+				TargetAttributes = {
+					002EFA811EEF41A800C9C8B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4DN5KQR8W8;
+						ProvisioningStyle = Automatic;
+					};
+					002EFA971EEF41F100C9C8B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4DN5KQR8W8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					002EFAB21EEF424400C9C8B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4DN5KQR8W8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					002EFAEA1EEF478600C9C8B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4DN5KQR8W8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 002EFA7D1EEF41A800C9C8B8 /* Build configuration list for PBXProject "FinderNewFileExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002EFA791EEF41A800C9C8B8;
+			productRefGroup = 002EFA831EEF41A800C9C8B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002EFA811EEF41A800C9C8B8 /* FinderNewFileExtension */,
+				002EFA971EEF41F100C9C8B8 /* FinderSyncExtension */,
+				002EFAEA1EEF478600C9C8B8 /* NewFileNameGenerator */,
+				002EFAB21EEF424400C9C8B8 /* NewFileNameGeneratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002EFA801EEF41A800C9C8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFA8A1EEF41A800C9C8B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFA961EEF41F100C9C8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAB11EEF424400C9C8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAE91EEF478600C9C8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002EFA7E1EEF41A800C9C8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFA861EEF41A800C9C8B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFA941EEF41F100C9C8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFACA1EEF42B300C9C8B8 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAAF1EEF424400C9C8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFACC1EEF42EB00C9C8B8 /* NewFileNameGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002EFAE61EEF478600C9C8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EFAFA1EEF491B00C9C8B8 /* NewFileNameGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		002EFAA01EEF41F100C9C8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002EFA971EEF41F100C9C8B8 /* FinderSyncExtension */;
+			targetProxy = 002EFA9F1EEF41F100C9C8B8 /* PBXContainerItemProxy */;
+		};
+		002EFAB81EEF424400C9C8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002EFA811EEF41A800C9C8B8 /* FinderNewFileExtension */;
+			targetProxy = 002EFAB71EEF424400C9C8B8 /* PBXContainerItemProxy */;
+		};
+		002EFAF11EEF478600C9C8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002EFAEA1EEF478600C9C8B8 /* NewFileNameGenerator */;
+			targetProxy = 002EFAF01EEF478600C9C8B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002EFA8F1EEF41A800C9C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		002EFA901EEF41A800C9C8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		002EFA921EEF41A800C9C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = FinderNewFileExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		002EFA931EEF41A800C9C8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = FinderNewFileExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		002EFAA31EEF41F100C9C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension.FinderSyncExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		002EFAA41EEF41F100C9C8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension.FinderSyncExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		002EFAC71EEF424400C9C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = NewFileNameGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.NewFileNameGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		002EFAC81EEF424400C9C8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = NewFileNameGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.NewFileNameGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		002EFAF51EEF478600C9C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NewFileNameGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		002EFAF61EEF478600C9C8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NewFileNameGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.FinderNewFileExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002EFA7D1EEF41A800C9C8B8 /* Build configuration list for PBXProject "FinderNewFileExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EFA8F1EEF41A800C9C8B8 /* Debug */,
+				002EFA901EEF41A800C9C8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002EFA911EEF41A800C9C8B8 /* Build configuration list for PBXNativeTarget "FinderNewFileExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EFA921EEF41A800C9C8B8 /* Debug */,
+				002EFA931EEF41A800C9C8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002EFAA21EEF41F100C9C8B8 /* Build configuration list for PBXNativeTarget "FinderSyncExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EFAA31EEF41F100C9C8B8 /* Debug */,
+				002EFAA41EEF41F100C9C8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002EFAC61EEF424400C9C8B8 /* Build configuration list for PBXNativeTarget "NewFileNameGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EFAC71EEF424400C9C8B8 /* Debug */,
+				002EFAC81EEF424400C9C8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002EFAF41EEF478600C9C8B8 /* Build configuration list for PBXNativeTarget "NewFileNameGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EFAF51EEF478600C9C8B8 /* Debug */,
+				002EFAF61EEF478600C9C8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002EFA7A1EEF41A800C9C8B8 /* Project object */;
+}
